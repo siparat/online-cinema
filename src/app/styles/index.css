@@ -1,5 +1,29 @@
+:root {
+	--bg-100: #1A1A1A;
+	--bg-200: #292929;
+	--bg-300: #404040;
+	--text-100: #FFFFFF;
+	--text-200: #A8A8A8;
+	--text-300: #222222;
+	--red-100: #FF6347;
+	--red-200: #D7341D;
+	--red-300: #8D0000;
+	--blue-100: #474EFF;
+	--blue-200: #2C32E0;
+	--yellow-100: #FFE34E;
+	--yellow-200: #E3C421;
+	--green-100: #22F577;
+	--green-200: #31CE70;
+}
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: "Golos Text", sans-serif;
+	color: var(--text-100)
+}
+
+body {
+	background: var(--bg-100);
 }
