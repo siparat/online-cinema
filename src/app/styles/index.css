@@ -27,3 +27,18 @@
 body {
 	background: var(--bg-100);
 }
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.separator {
+	height: 1px;
+	width: 100%;
+	background: #2E323A;
+	display: block;
+}

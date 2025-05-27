@@ -1,0 +1,22 @@
+.link {
+	display: flex;
+	width: 100%;
+	padding: 13px 14px;
+	gap: 14px;
+	border-radius: 16px;
+
+	--svg-fill: var(--text-200);
+}
+
+.link.active {
+	background: var(--red-200);
+	--svg-fill: var(--text-100);
+}
+
+.link:not(.active):hover {
+	background: var(--text-300);
+}
+
+.link.active span {
+	color: var(--text-100);
+}

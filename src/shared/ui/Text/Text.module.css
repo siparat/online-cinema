@@ -1,0 +1,48 @@
+.common {
+	line-height: 120%;
+}
+
+.xs {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.s {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.m {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.l {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.xl {
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.primary {
+	color: var(--red-100);
+}
+
+.white {
+	color: var(--text-100);
+}
+
+.gray {
+	color: var(--text-200);
+}
+
+.gray-dark {
+	color: var(--bg-300);
+}
+
+.black {
+	color: var(--text-300);
+}
