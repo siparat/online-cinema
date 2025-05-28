@@ -1,0 +1,44 @@
+.common {
+	line-height: 120%;
+}
+
+.h1 {
+	font-size: 32px;
+	font-weight: 700;
+}
+.h2 {
+	font-size: 28px;
+	font-weight: 700;
+}
+.h3 {
+	font-size: 22px;
+	font-weight: 600;
+}
+.h4 {
+	font-size: 18px;
+	font-weight: 600;
+}
+.h5 {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.primary {
+	color: var(--red-100);
+}
+
+.white {
+	color: var(--text-100);
+}
+
+.gray {
+	color: var(--text-200);
+}
+
+.gray-dark {
+	color: var(--bg-300);
+}
+
+.black {
+	color: var(--text-300);
+}
