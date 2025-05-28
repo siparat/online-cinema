@@ -34,6 +34,7 @@ module.exports = defineConfig([
 		},
 
 		rules: {
+			'@typescript-eslint/no-unused-vars': 'warn',
 			'@typescript-eslint/explicit-function-return-type': 'warn',
 			'react-refresh/only-export-components': [
 				'warn',
