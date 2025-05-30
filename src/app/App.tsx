@@ -1,6 +1,6 @@
 import { RouterProvider } from 'react-router-dom';
 import './styles/index.css';
-import { router } from '@/shared';
+import { router } from './router';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 function App(): JSX.Element {

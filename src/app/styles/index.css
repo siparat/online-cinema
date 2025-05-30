@@ -36,6 +36,20 @@ a {
 	text-decoration: none;
 }
 
+*::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--red-100);
+	border-radius: 20px;
+}
+
 .separator {
 	height: 1px;
 	width: 100%;

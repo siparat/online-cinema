@@ -9,5 +9,6 @@ export enum Routes {
 	CARTOONS = '/cartoons',
 	HISTORY = '/history',
 	FAVOURITES = '/favourites',
-	PROFILE = '/profile'
+	PROFILE = '/profile',
+	MOVIE = '/movie/:kpId'
 }
