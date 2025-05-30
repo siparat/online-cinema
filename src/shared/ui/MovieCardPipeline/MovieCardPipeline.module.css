@@ -1,0 +1,17 @@
+.pipeline {
+	margin-block: 20px;
+	display: flex;
+	gap: 40px;
+	flex-wrap: nowrap;
+	overflow: auto;
+	margin-inline: -40px;
+	padding-inline: 40px;
+}
+
+.pipeline::-webkit-scrollbar {
+	display: none;
+}
+
+.pipeline > * {
+	flex-shrink: 0;
+}
