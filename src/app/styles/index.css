@@ -50,6 +50,10 @@ a {
 	border-radius: 20px;
 }
 
+.scroll-block {
+	overflow: hidden;
+}
+
 .separator {
 	height: 1px;
 	width: 100%;
