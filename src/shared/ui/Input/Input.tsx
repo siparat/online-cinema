@@ -7,5 +7,5 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 export const Input = forwardRef<HTMLInputElement, Props>(({ className, ...props }: Props, ref): JSX.Element => {
-	return <input ref={ref} className={cn(className, styles.input)} {...props} />;
+	return <input ref={ref} className={cn(className, styles['input'])} {...props} />;
 });
