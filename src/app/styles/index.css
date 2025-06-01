@@ -36,9 +36,37 @@ a {
 	text-decoration: none;
 }
 
+*::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--red-100);
+	border-radius: 20px;
+}
+
+.scroll-block {
+	overflow: hidden;
+}
+
 .separator {
 	height: 1px;
 	width: 100%;
 	background: #2E323A;
 	display: block;
+}
+
+.toast {
+	background: var(--bg-300) !important;
+	color: var(--red-100) !important;
+	font-weight: 500 !important;
+}
+
+.toast > svg {
+	width: 30px;
 }

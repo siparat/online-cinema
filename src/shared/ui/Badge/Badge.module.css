@@ -1,0 +1,24 @@
+.red {
+	background: linear-gradient(45deg, var(--red-100), var(--red-200));
+}
+
+.green {
+	background: linear-gradient(45deg, var(--green-100), var(--green-200));
+}
+
+.yellow {
+	background: linear-gradient(45deg, var(--yellow-100), var(--yellow-200));
+}
+
+.blue {
+	background: linear-gradient(45deg, var(--blue-100), var(--blue-200));
+}
+
+.l {
+	padding: 7px 8px;
+	border-radius: 8px;
+}
+.s {
+	padding: 5px 6px;
+	border-radius: 6px;
+}

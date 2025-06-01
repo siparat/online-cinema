@@ -1,0 +1,31 @@
+.card {
+	max-width: 276px;
+	width: 100%;
+	position: relative;
+}
+
+.badges {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	top: 19px;
+	left: -18px;
+}
+
+.poster {
+	border-radius: 25px;
+	width: 100%;
+	aspect-ratio: 0.7;
+}
+
+.title {
+	margin-top: 15px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+.year {
+	margin-top: 8px;
+}
