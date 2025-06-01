@@ -13,8 +13,12 @@ interface Props extends HTMLAttributes<HTMLElement> {
 }
 
 export const MovieCard = ({ data, isLink = true, className, ...props }: Props): JSX.Element => {
-	const image = useMemo(() => data.images.find((i) => i.type == ImageMovieType.POSTER && i.country_code == 'ru'), [data.images])!;
+	const image = useMemo(() => data.images.find((i) => i.type == ImageMovieType.POSTER && i.country_code == 'ru'), [data.images]);
 	const commonProps = { className: cn(className, styles['card']), ...props };
+
+	if (!image) {
+		return <></>;
+	}
 
 	const cardContent = (
 		<>

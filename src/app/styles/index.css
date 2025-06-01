@@ -60,3 +60,13 @@ a {
 	background: #2E323A;
 	display: block;
 }
+
+.toast {
+	background: var(--bg-300) !important;
+	color: var(--red-100) !important;
+	font-weight: 500 !important;
+}
+
+.toast > svg {
+	width: 30px;
+}
