@@ -1,0 +1,15 @@
+.button {
+	width: fit-content;
+	display: flex;
+	border-radius: 4px;
+	background: var(--bg-300);
+	padding-block: 3px;
+}
+
+.button svg {
+	transition: var(--animation-duration) transform ease;
+}
+
+.rotate svg {
+	transform: rotate(180deg);
+}

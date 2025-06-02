@@ -1,4 +1,4 @@
-import { useMovieStore } from '@/entities/movie-card';
+import { useMovieStore } from '@/entities/movie';
 import { MovieCardPipeline, Title } from '@/shared';
 import { HTMLAttributes } from 'react';
 

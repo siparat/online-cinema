@@ -1,0 +1,39 @@
+
+.sidebar {
+	--animation-duration: .3s;
+	transition: var(--animation-duration) width ease;
+	width: var(--sidebar-width);
+	border-right: 1px solid var(--bg-300);
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
+	position: fixed;
+	height: 100vh;
+	overflow: auto;
+	overscroll-behavior: none;
+}
+
+.sidebar::-webkit-scrollbar {
+	display: none;
+}
+
+.sidebar-menu {
+	margin-top: 40px;
+}
+
+
+button.toggle-button {
+	position: absolute;
+	right: 5px;
+	top: 29px;
+	opacity: 0;
+	transition: var(--animation-duration) opacity ease;
+}
+
+.sidebar:hover button.toggle-button {
+	opacity: .6;
+}
+
+.sidebar:hover button.toggle-button:hover {
+	opacity: 1;
+}

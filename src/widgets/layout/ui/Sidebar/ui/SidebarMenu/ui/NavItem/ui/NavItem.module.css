@@ -8,6 +8,18 @@
 	--svg-fill: var(--text-200);
 }
 
+.link svg {
+	flex-shrink: 0;
+}
+
+.link span {
+	transition: .25s opacity ease;
+}
+
+.link.collapsed span {
+	opacity: 0;
+}
+
 .link.active {
 	background: var(--red-200);
 	--svg-fill: var(--text-100);

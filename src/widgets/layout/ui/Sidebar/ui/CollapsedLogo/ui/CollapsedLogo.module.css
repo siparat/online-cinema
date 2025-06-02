@@ -1,0 +1,11 @@
+.logo path {
+	transition: var(--animation-duration) all ease;
+}
+
+.collapsed {
+	opacity: 0;
+}
+
+.moved-char {
+	transform: translateX(-50px);
+}

@@ -1,4 +1,4 @@
-import { useMovieStore } from '@/entities/movie-card';
+import { useMovieStore } from '@/entities/movie';
 import toast from 'react-hot-toast';
 import { saveMovieByTmdbId } from '../api/save-movie-by-tmdb-id';
 

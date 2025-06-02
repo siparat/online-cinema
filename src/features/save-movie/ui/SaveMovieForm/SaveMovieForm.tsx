@@ -1,7 +1,7 @@
 import { Input, MovieCardPipeline, Title } from '@/shared';
 import { useSearchMovies } from '../../model/use-search-movies';
 import { mapFromTmdbToMovieCard } from '@/entities/movie-card/lib';
-import { useMovieStore } from '@/entities/movie-card';
+import { useMovieStore } from '@/entities/movie';
 import { useMemo } from 'react';
 import styles from './SaveMovieForm.module.css';
 import { useSaveMovie } from '../../model/use-save-movie';

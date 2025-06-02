@@ -1,22 +1,19 @@
-import { Link, Outlet } from 'react-router-dom';
-import { SidebarMenu } from './SidebarMenu/ui/SidebarMenu';
+import { Outlet } from 'react-router-dom';
 import styles from './Layout.module.css';
-import LogoIcon from '@/shared/assets/icons/logo.svg?react';
-import { GlobalLoader, Routes, useGlobalLoaderStore } from '@/shared';
+import { GlobalLoader, useGlobalLoaderStore } from '@/shared';
+import { useSidebarStore } from './Sidebar/model/store';
+import cn from 'classnames';
+import { Sidebar } from './Sidebar/ui/Sidebar';
 
 export const Layout = (): JSX.Element => {
 	const isGlobalLoading = useGlobalLoaderStore((state) => state.isLoading);
+	const sidebarIsCollapsed = useSidebarStore((state) => state.collapsed);
 
 	return (
 		<>
 			{isGlobalLoading && <GlobalLoader />}
-			<div className={styles['layout']}>
-				<aside className={styles['sidebar']}>
-					<Link to={Routes.MAIN}>
-						<LogoIcon />
-					</Link>
-					<SidebarMenu className={styles['sidebar-menu']} />
-				</aside>
+			<div className={cn(styles['layout'], { [styles['collapsed']]: sidebarIsCollapsed })}>
+				<Sidebar />
 				<main className={styles['content']}>
 					<Outlet />
 				</main>

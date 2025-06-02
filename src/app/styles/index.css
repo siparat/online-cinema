@@ -36,6 +36,12 @@ a {
 	text-decoration: none;
 }
 
+button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
 *::-webkit-scrollbar {
 	width: 6px;
 	height: 6px;
