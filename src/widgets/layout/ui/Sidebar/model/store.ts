@@ -1,3 +1,4 @@
+import { LocalStorageKeys } from '@/shared';
 import { create, StateCreator } from 'zustand';
 import { persist } from 'zustand/middleware';
 
@@ -12,7 +13,7 @@ const sidebarStore: StateCreator<SidebarStore, [], [['zustand/persist', never]]>
 		toggle: () => set((state) => ({ collapsed: !state.collapsed }))
 	}),
 	{
-		name: 'sidebar'
+		name: LocalStorageKeys.SIDEBAR
 	}
 );
 

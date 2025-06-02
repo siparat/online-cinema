@@ -1,8 +1,9 @@
+import { LocalStorageKeys } from '@/shared';
 import { MovieEntity } from 'km-contracts';
 import { create, StateCreator } from 'zustand';
 import { persist } from 'zustand/middleware';
 
-interface MovieStoreState {
+export interface MovieStoreState {
 	movies: MovieEntity[];
 }
 
@@ -26,7 +27,7 @@ const movieStore: StateCreator<MovieStoreActions & MovieStoreState, [], [['zusta
 		}
 	}),
 	{
-		name: 'movies'
+		name: LocalStorageKeys.MOVIES
 	}
 );
 
