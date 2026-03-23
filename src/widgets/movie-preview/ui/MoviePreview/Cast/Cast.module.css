@@ -1,0 +1,9 @@
+.cast {
+	margin-top: 70px;
+}
+
+.persons {
+	margin-top: 34px;
+	display: flex;
+	gap: 45px;
+}

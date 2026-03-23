@@ -1,0 +1,28 @@
+.button {
+	min-width: 233px;
+	padding: 15px 25px;
+	border-radius: 16px;
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--text-100);
+}
+
+.primary {
+	background: linear-gradient(45deg, var(--red-100), var(--red-200));
+}
+
+.dark {
+	background: linear-gradient(45deg, var(--bg-300), var(--bg-200));
+}
+
+.transparent {
+	background: rgba(255, 255, 255, .15);
+	backdrop-filter: blur(6px);
+}
+
+.ghost {
+	border: 1.5px solid var(--text-200);
+	color: var(--text-200);
+	background: none;
+	min-width: 0;
+}

@@ -13,7 +13,7 @@ interface Props extends HTMLAttributes<HTMLSpanElement> {
 export const Badge = ({ appearance = BadgeColor.RED, size = 'l', className, children, ...props }: Props): JSX.Element => {
 	return (
 		<span className={cn(className, styles['badger'], styles[appearance], styles[size])} {...props}>
-			<Highlight color={appearance == 'yellow' ? 'black' : 'white'} size={size == 's' ? 's' : 'm'}>
+			<Highlight className={styles['value']} color={appearance == 'yellow' ? 'black' : 'white'} size={size == 's' ? 's' : 'm'}>
 				{children}
 			</Highlight>
 		</span>

@@ -18,7 +18,13 @@
 	padding: 7px 8px;
 	border-radius: 8px;
 }
+
 .s {
 	padding: 5px 6px;
 	border-radius: 6px;
+}
+
+.value {
+	display: inline-block;
+	text-align: center;
 }

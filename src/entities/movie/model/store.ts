@@ -5,10 +5,13 @@ import { persist } from 'zustand/middleware';
 
 export interface MovieStoreState {
 	movies: MovieEntity[];
+	currentMovie?: MovieEntity;
 }
 
 interface MovieStoreActions {
 	addMovie: (movie: MovieEntity) => void;
+	setCurrentMovie: (movieKpId: number) => void;
+	resetCurrentMovie: () => void;
 }
 
 const movieStoreInitialState: MovieStoreState = {
@@ -24,7 +27,15 @@ const movieStore: StateCreator<MovieStoreActions & MovieStoreState, [], [['zusta
 				return;
 			}
 			set({ movies: allMovies.concat(movie) });
-		}
+		},
+		setCurrentMovie: (movieKpId: number): void => {
+			const movie = get().movies.find((m) => m.kp_id == movieKpId);
+			if (!movie) {
+				return;
+			}
+			set({ currentMovie: movie });
+		},
+		resetCurrentMovie: () => set({ currentMovie: undefined })
 	}),
 	{
 		name: LocalStorageKeys.MOVIES

@@ -1,0 +1,46 @@
+.info {
+	margin-top: 40px;
+	flex-shrink: 0;
+	z-index: 100;
+}
+
+.backdrop {
+	height: 100%;
+	width: 100%;
+	max-height: 550px;
+    object-fit: cover;
+}
+
+.backdrop-wrapper {
+	z-index: 10;
+	flex-grow: 1;
+	object-fit: cover;
+	width: 0;
+	position: relative;
+	margin: -60px -40px;
+}
+
+.backdrop-overlay {
+	position: absolute;
+	inset: 0;
+	z-index: 11;
+	background: linear-gradient(180deg, rgba(26,26,26,0) 0%, rgba(26,26,26,1) 100%);
+}
+
+.backdrop-overlay::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(0deg, rgba(26, 26, 26, 0) 25%, rgba(26, 26, 26, 1) 100%);
+}
+
+.backdrop-overlay::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(270deg, rgba(26, 26, 26, 0) 50%, rgba(26, 26, 26, 1) 100%);
+}
+
+.wrapper {
+	display: flex;
+}

@@ -1,0 +1,21 @@
+.overview {
+	max-width: 700px;
+	margin-top: 90px;
+}
+
+.text {
+	margin-top: 13px;
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 5;
+	line-clamp: 5;
+}
+.fullsizeOverview {
+	-webkit-line-clamp: none;
+	line-clamp: none;
+}
+
+.openButton {
+	margin-top: 8px;
+}

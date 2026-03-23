@@ -1,10 +1,10 @@
 import { ImageMovieType } from 'km-contracts';
 
 const sizeMap: Record<ImageMovieType | 'CREDIT_LOGO', string> = {
-	[ImageMovieType.BACKDROP]: 'w1280',
-	[ImageMovieType.LOGO]: 'w500',
-	[ImageMovieType.POSTER]: 'h632',
-	CREDIT_LOGO: 'w185'
+	[ImageMovieType.BACKDROP]: 'original',
+	[ImageMovieType.LOGO]: 'original',
+	[ImageMovieType.POSTER]: 'original',
+	CREDIT_LOGO: 'original'
 };
 
 const TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/';
